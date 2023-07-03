@@ -1,0 +1,100 @@
+// Static Position: //
+
+The default position value for elements.
+Elements with position: static are positioned according to the normal flow of the document.
+The top, right, bottom, and left properties have no effect on static positioned elements.
+Example:
+
+** Code **
+
+<style>
+  .box {
+    position: static;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+</style>
+
+<div class="box">Static Box</div>
+
+In this example, the .box element is positioned statically. It will be displayed in its normal position in the document flow.
+
+************************************************************************
+
+// Fixed Position: //
+
+The element is positioned relative to the browser window.
+It does not scroll with the rest of the page.
+The top, right, bottom, and left properties can be used to specify its position.
+Example:
+
+** Code **
+<style>
+  .box {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+  }
+</style>
+
+<div class="box">Fixed Box</div>
+In this example, the .box element is positioned fixedly with a top value of 50px and a left value of 50px. It will remain in the same position even if the page is scrolled.
+
+************************************************************************
+
+// Sticky Position: //
+
+The element is positioned based on the user's scroll position.
+It behaves like position: relative until the user scrolls to a specified threshold, then becomes position: fixed.
+The top, right, bottom, and left properties can be used to specify its position.
+Example:
+
+** Code **
+<style>
+  .box {
+    position: sticky;
+    top: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+  }
+</style>
+
+<div class="box">Sticky Box</div>
+In this example, the .box element is positioned as sticky with a top value of 20px. It will behave like a relative positioned element until the user scrolls to a specific point, at which it will stick to that position.
+
+************************************************************************
+
+// Relative Position: //
+
+The element is positioned relative to its normal position.
+It still takes up space in the normal flow of the document.
+The top, right, bottom, and left properties can be used to adjust its position.
+Example:
+
+** Code **
+<style>
+  .box {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+  }
+</style>
+
+<div class="box">Relative Box</div>
+In this example, the .box element is positioned relatively with a top value of 20px and a left value of 20px. It will be shifted 20 pixels down and 20 pixels to the right from its normal position.
+
+************************************************************************
+
+// Absolute Position://
+
+The element is positioned relative to its nearest positioned ancestor.
+If no positioned ancestor exists, it is positioned relative to the initial containing block (usually the browser window).
+The top, right, `bottom
