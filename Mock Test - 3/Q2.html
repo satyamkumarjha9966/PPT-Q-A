@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Q 2</title>
+  <style>
+    .container {
+  text-align: center;
+  margin-top: 50px;
+    }
+
+    h1 {
+    font-size: 24px;
+    }
+
+    input {
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    }
+
+    button {
+    height: 30px;
+    margin: 10px;
+    }
+
+    #output {
+    margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Dynamic Text App</h1>
+    <input type="text" id="textInput" placeholder="Enter some text">
+    <button onclick="addText()">Submit</button>
+    <div id="output"></div>
+  </div>
+  <script>
+    function addText() {
+    var input = document.getElementById("textInput");
+    var text = input.value;
+    var output = document.getElementById("output");
+    output.innerHTML += "<p>" + text + "</p>";
+    input.value = "";
+    }
+  </script>
+</body>
+</html>
